@@ -1,0 +1,16 @@
+.slide-show-container {
+    width: 100%;
+    max-height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Temp for testing */
+body {
+    margin: 0;
+}
+.slide-show-content {
+    width: 50px;
+    height: 50px;
+    background-color: blueviolet;
+}
