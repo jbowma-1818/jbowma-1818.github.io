@@ -2,24 +2,57 @@
     width: 100%;
     max-height: 100px;
     overflow: hidden;
-    justify-content: space-evenly;
     position: relative;
 }
 
 .slides-wrapper {
-    display: flex;
-    transition: transform 0.5s ease;
-    gap: 10px;
+    position: relative;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
 }
 
 .slide-show-content {
-    flex: 0 0 33.33%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% / 3); /* each of the 3 visible slides takes 1/3 of container width */
+    max-width: calc(100% / 3);
+    height: 100px;
+    background-color: blueviolet;
+    border-radius: 12px;
     opacity: 0.5;
+    scale: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: transform 0.4s ease, opacity 0.4s ease, scale 0.4s ease;
 }
 
-.slide-show-content:nth-child(2) {
-    opacity: 1;
-    scale: 1.1;
+.slide-show-container button {
+    width: 24px;
+    height: 24px;
+    position: absolute;  
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    opacity: 0.6;
+    border: none;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.left-side-button {
+    left: 4px;
+}
+
+.right-side-button {
+    right: 4px;
 }
 
 /* Temp for testing */
