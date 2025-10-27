@@ -9,10 +9,17 @@
 .slides-wrapper {
     display: flex;
     transition: transform 0.5s ease;
+    gap: 10px;
 }
 
 .slide-show-content {
     flex: 0 0 33.33%;
+    opacity: 0.5;
+}
+
+.slide-show-content:nth-child(2) {
+    opacity: 1;
+    scale: 1.1;
 }
 
 /* Temp for testing */

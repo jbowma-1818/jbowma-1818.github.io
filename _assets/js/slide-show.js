@@ -13,6 +13,20 @@ const totalSlides = slideShowContent.length;
 function updateSlidePosition() {
     const offSet = -(currentIndex * (100 / visibleSlides));
     slidesWrapper.style.transform = `translateX(${offSet}%)`;
+    
+    const centerIndex = (currentIndex + Math.floor(visibleSlides / 2)) % totalSlides;
+
+    for(let index = 0; index < totalSlides; index++){
+        console.log(currentIndex);
+        console.log(index);
+        if(index === centerIndex){
+            slideShowContent[index].style.opacity = 1;
+            slideShowContent[index].style.scale = 1.1;
+        } else {
+            slideShowContent[index].style.opacity = 0.5;
+            slideShowContent[index].style.scale = 1; 
+        }
+    }
 }
 
 // Handles when the left side button is pressed
