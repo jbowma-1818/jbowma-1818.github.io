@@ -1,8 +1,18 @@
 .slide-show-container {
     width: 100%;
     max-height: 100px;
-    display: flex;
+    overflow: hidden;
     justify-content: space-evenly;
+    position: relative;
+}
+
+.slides-wrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide-show-content {
+    flex: 0 0 33.33%;
 }
 
 /* Temp for testing */
