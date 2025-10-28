@@ -12,12 +12,10 @@ const gapPercent = 10;
 // Handles updating position of slide when position has changed
 function updateSlidePosition() {
     const centerIndex = (currentIndex + Math.floor(visibleSlides / 2)) % totalSlides;
-    const multipliers = [1, 1, 1.1];
-    let multiplierIndex = 0;
 
     for (let i = 0; i < totalSlides; i++) {
         const offset = (i - currentIndex + totalSlides) % totalSlides;
-        console.log(offset);
+
         if (offset < visibleSlides) {
           // base X for column 0,1,2
           const baseX = offset * (100 + gapPercent);
