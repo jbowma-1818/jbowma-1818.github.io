@@ -13,7 +13,7 @@ I’m driven by creating technology that improves lives—whether through health
 
 ## 🎓 Education
 **Clemson University**, Clemson, SC  
-**Bachelor of Science in Computer Science**, Minor in Mathematics — *Graduated: August 2025*  
+**Bachelor's Degree in Computer Science**, Minor in Mathematics — *Graduated: August 2025*  
 
 ---
 
